@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  margin-top: -40px;
+  display: flex;
+  position: relative;
+}
+
+.text {
+  transform: scale(1, 1.6);
+  font-size: 2em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transform-style: preserve-3d;
+  letter-spacing: -0.1rem;
+}
+
+.text-wrapper {
+  z-index: 1;
+}
+
+.transform {
+  transform: rotate(355deg);
+}
+
+.shadow-text-wrapper {
+  position: absolute;
+  z-index: 0;
+  color: #EDEDED;
+}
+
+.shadow-transform {
+   transform: rotate(355deg) skew(70deg) translateX(-60px) translateY(0px);
+}
+
+.rainbow {
+  background: red;
+  background: -webkit-linear-gradient(
+    left,
+    #b306a9,
+    #ef2667,
+    #f42e2c,
+    #ffa509,
+    #fdfc00,
+    #55ac2f,
+    #0b13fd,
+    #a804af
+  );
+  background: -o-linear-gradient(
+    left,
+    #b306a9,
+    #ef2667,
+    #f42e2c,
+    #ffa509,
+    #fdfc00,
+    #55ac2f,
+    #0b13fd,
+    #a804af
+  );
+  background: -moz-linear-gradient(
+    left,
+    #b306a9,
+    #ef2667,
+    #f42e2c,
+    #ffa509,
+    #fdfc00,
+    #55ac2f,
+    #0b13fd,
+    #a804af
+  );
+  background: linear-gradient(
+    to right,
+    #b306a9,
+    #ef2667,
+    #f42e2c,
+    #ffa509,
+    #fdfc00,
+    #55ac2f,
+    #0b13fd,
+    #a804af
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .text {
+      font-size: 1em;
+  }
+  
+  .shadow-transform {
+   transform: rotate(355deg) skew(70deg) translateX(-29px) translateY(0px);
+  }
+}
